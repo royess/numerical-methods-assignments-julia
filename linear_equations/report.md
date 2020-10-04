@@ -10,7 +10,7 @@
 julia exercise.jl
 ```
 
-Julia 提供了很方便的 BenchmarkTools 来测试性能, 报告中的性能数据都是用它测出的. 使用请参考官方文档 [https://github.com/JuliaCI/BenchmarkTools.jl].
+Julia 提供了很方便的 BenchmarkTools 来测试性能, 报告中的性能数据都是用它测出的. 使用请参考[官方文档](https://github.com/JuliaCI/BenchmarkTools.jl).
 
 ## 实验分析
 
