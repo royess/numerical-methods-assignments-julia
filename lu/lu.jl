@@ -1,4 +1,4 @@
-module LinearEq
+module LU
 
 using LinearAlgebra
 
