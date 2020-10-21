@@ -1,0 +1,95 @@
+习题 1.1
+LU分解:
+性能:
+BenchmarkTools.Trial: 
+  memory estimate:  48.88 MiB
+  allocs estimate:  820991
+  --------------
+  minimum time:     17.104 ms (14.35% GC)
+  median time:      20.124 ms (22.07% GC)
+  mean time:        22.550 ms (21.22% GC)
+  maximum time:     48.270 ms (7.93% GC)
+  --------------
+  samples:          222
+  evals/sample:     1
+误差:
+0.0
+QR分解:
+性能:
+BenchmarkTools.Trial: 
+  memory estimate:  120.48 MiB
+  allocs estimate:  2129117
+  --------------
+  minimum time:     66.591 ms (18.32% GC)
+  median time:      85.806 ms (31.77% GC)
+  mean time:        92.648 ms (31.80% GC)
+  maximum time:     186.082 ms (22.32% GC)
+  --------------
+  samples:          54
+  evals/sample:     1
+误差:
+28.3939723718657284335840759851988341264588374104994572643372969019773208201496
+----------
+习题 1.2 (1)
+改进的平方根法:
+性能:
+BenchmarkTools.Trial: 
+  memory estimate:  2.34 MiB
+  allocs estimate:  1648
+  --------------
+  minimum time:     433.400 μs (0.00% GC)
+  median time:      616.700 μs (0.00% GC)
+  mean time:        791.794 μs (10.01% GC)
+  maximum time:     9.958 ms (0.00% GC)
+  --------------
+  samples:          6162
+  evals/sample:     1
+误差:
+6.877336544494496e-15
+QR分解:
+性能:
+BenchmarkTools.Trial: 
+  memory estimate:  11.37 MiB
+  allocs estimate:  3098
+  --------------
+  minimum time:     2.212 ms (0.00% GC)
+  median time:      3.232 ms (0.00% GC)
+  mean time:        3.470 ms (9.79% GC)
+  maximum time:     12.612 ms (10.82% GC)
+  --------------
+  samples:          1429
+  evals/sample:     1
+误差:
+1.5003217285774346e-14
+----------
+习题 1.2 (2)
+由于 Hilbert 矩阵的高度病态, 这里使用 128 位的浮点数.改进的平方根法:
+性能:
+BenchmarkTools.Trial: 
+  memory estimate:  4.33 MiB
+  allocs estimate:  76534
+  --------------
+  minimum time:     3.637 ms (0.00% GC)
+  median time:      4.063 ms (0.00% GC)
+  mean time:        5.563 ms (6.51% GC)
+  maximum time:     17.833 ms (23.08% GC)
+  --------------
+  samples:          894
+  evals/sample:     1
+误差:
+1.533781191342367708761134112342086358144494732575489341546867929196308386275934e-15
+QR分解:
+性能:
+BenchmarkTools.Trial: 
+  memory estimate:  14.15 MiB
+  allocs estimate:  249336
+  --------------
+  minimum time:     13.491 ms (0.00% GC)
+  median time:      15.519 ms (0.00% GC)
+  mean time:        17.889 ms (6.70% GC)
+  maximum time:     44.556 ms (10.32% GC)
+  --------------
+  samples:          281
+  evals/sample:     1
+误差:
+9.540662003315050942086480789018988441847398510183569913937223372595576559382273e-16

@@ -24,7 +24,7 @@ function lu_decomp!(A, col_select::Bool=true)
     return A, u
 end
 
-function lu_solve_linear_eqs(A, b, col_select::Bool=true)
+function lu_solver(A, b, col_select::Bool=true)
     # decompose A to get P, L, U
     n = size(A)[1]
     LU = copy(A)
@@ -48,7 +48,7 @@ function lu_solve_linear_eqs(A, b, col_select::Bool=true)
         y[j] = y[j] / LU[j,j]
         y[1:j-1] = y[1:j-1] - y[j]*LU[1:j-1, j]
     end
-    
+
     y[1] = y[1] / LU[1, 1]
 
     return y
@@ -86,7 +86,7 @@ function ldlt_decomp!(A)
     return A
 end
 
-function sqroot_solve_linear_eqs(A, b, improved=true)
+function sqroot_solver(A, b, improved=true)
     n = size(A)[1]
     y = copy(b)
     L = copy(A)
